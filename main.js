@@ -9,15 +9,15 @@ function addSong(songName, artistName, songUrl){
     <strong>${songName}</strong>
     -${artistName}
     <a href=${songUrl}"target_blank">Reproducir</a>
-    <button class="delete.btn">Eliminar</button>  `;
+    <button class="delete.btn text-yellow-950">Eliminar</button>  `;
 
-    //agregar el evento para eliminar la canción al boton
-    const deleteButton = listSong.lastElementChild; //hace que seleccione el ultimo elemento de la lista, el boton de eliminar 
-    deleteButton.addEventListener('click',() => {
-        listSong.remove();//elimina el li cuando se hace click en el btn
-    });
+        //agregar el evento para eliminar la canción al boton
+        const deleteButton = listSong.lastElementChild; //hace que seleccione el ultimo elemento de la lista, el boton de eliminar 
+        deleteButton.addEventListener('click',() => {
+            listSong.remove();//elimina el li cuando se hace click en el btn
+        });
 
-    //agregar la cacnion a la lista de reproduccion 
+    //agregar la cancion a la lista de reproduccion 
     playList.appendChild(listSong);
 }
 
