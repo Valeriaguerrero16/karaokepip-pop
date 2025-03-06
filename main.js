@@ -8,7 +8,7 @@ function addSong(songName, artistName, songUrl){
     listSong.innerHTML = `
     <strong>${songName}</strong>
     -${artistName}
-    <a href=${songUrl}"target_blank">Reproducir</a>
+    <a class="text-yellow-950" href=${songUrl}"target_blank">Reproducir</a>
     <button class="delete.btn text-yellow-950">Eliminar</button>  `;
 
         //agregar el evento para eliminar la canción al boton
